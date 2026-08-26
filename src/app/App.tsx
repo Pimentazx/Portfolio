@@ -95,25 +95,25 @@ const EDUCATION = [
   {
     degree: "Bacharelado em Engenharia de Software",
     school: "Universidade São Judas Tadeu",
-    year: "2026–2028",
+    year: "AGO.2026–DEZ.2028",
     status: "cursando",
   },
   {
     degree: "Pós-graduação Lato Sensu Full-Stack Developer",
     school: "FIAP",
-    year: "mar.2025–jan.2026",
+    year: "MAR.2025–FEV.2026",
     status: "concluído",
   },
   {
     degree: "Tecnologia em Análise e Desenvolvimento de Sistemas",
     school: "Faculdade de Mecatrônica SENAI",
-    year: "jan.2023–dez.2024",
+    year: "JAN.2023–DEZ.2024",
     status: "concluído",
   },
   {
     degree: "Técnico em Redes de Computadores",
     school: 'SENAI "Roberto Simonsen"',
-    year: "jan.2020–jun.2022",
+    year: "JAN.2020–JUN.2022",
     status: "concluído",
   },
 ];
@@ -122,18 +122,35 @@ const EXPERIENCE = [
   {
     title: "Desenvolvedor Full Stack",
     company: "Freelancer",
-    period: "Jan. 2026 – presente",
+    period: "JAN. 2026 – presente",
     description:
-      "Desenvolvimento completo de aplicações web para clientes — do front-end ao back-end e banco de dados. React, TypeScript, Node.js e Java. Manutenção, correção de bugs e entrega de novas funcionalidades.",
+      "Desenvolvimento completo de aplicações web para clientes — do front-end ao back-end e banco de dados. React, TypeScript, Node.js, Java e integração com serviços externos. Destaque para projetos reais em produção, como o site institucional da Mérito Formaturas.",
   },
   {
     title: "Estagiário de TI",
     company: "SESI 379 Vila Carrão",
-    period: "Mar. 2023 – Nov. 2024",
+    period: "MAR. 2023 – NOV. 2024",
     description:
       "Manutenção de equipamentos (computadores, projetores, monitores), suporte técnico, resolução de problemas de software e conectividade. Desenvolvimento de aulas de TI e mentoria na equipe de robótica escolar.",
   },
 ];
+
+const FEATURED_PROJECT = {
+  title: "Mérito Formaturas",
+  year: "2025",
+  site: "meritoformaturas.com.br",
+  summary:
+    "Projeto entregue em produção para um cliente real, com foco em experiência do usuário, apresentação de serviços, galeria multimídia e conversão de leads por meio de um formulário personalizado de solicitação de álbum de formatura.",
+  description:
+    "Além do visual institucional, o projeto envolveu arquitetura de front-end e back-end, integração com Cloudinary, SMTP e APIs externas, além da publicação e configuração de serviços em produção.",
+  stack: ["React", "TypeScript", "Vite", "Tailwind CSS", "NestJS", "Cloudinary", "SMTP", "APIs"],
+  preview: [
+    "Landing Page",
+    "Galeria",
+    "Formulário",
+  ],
+  url: "http://meritoformaturas.com.br",
+};
 
 const TECH_STACK = [
   { name: "React", cat: "frontend" },
@@ -164,16 +181,43 @@ const TECH_CATS: { id: string; label: string }[] = [
 ];
 
 const CERTS = [
-  { name: "React Completo", issuer: "Origamid", year: "2026" },
-  { name: "UI Design Avançado", issuer: "Origamid", year: "2026" },
-  { name: "Go: Métodos, Generics e Interface", issuer: "Alura", year: "2025" },
-  { name: "Go: Concorrência e Otimização de API", issuer: "Alura", year: "2025" },
-  { name: "Node.js: Testes Unitários e de Integração", issuer: "Alura", year: "2025" },
-  { name: "MongoDB: Banco de Dados NoSQL", issuer: "Alura", year: "2025" },
-  { name: "CSS Grid Layout", issuer: "Origamid", year: "2025" },
-  { name: "Modelagem de Banco Relacional", issuer: "Alura", year: "2025" },
-  { name: "JavaScript: POO, Arrays e Objetos", issuer: "Alura", year: "2025" },
-  { name: "Fundamentos em Cibersegurança", issuer: "Cisco Networking Academy", year: "2021" },
+  { name: "Go: use concorrência para otimizar sua aplicação", issuer: "Alura", year: "2026", url: "https://cursos.alura.com.br/certificate/5670c2c6-a2c6-4c5c-a893-817c2f02f859?lang" },
+  { name: "Go: crie Métodos, Generics e Interface", issuer: "Alura", year: "2026", url: "https://cursos.alura.com.br/certificate/5816a23f-a50a-4b01-808a-f2edc4d6fcb5?lang" },
+  { name: "Go: Concorrência e Otimização de API", issuer: "Alura", year: "2026", url: "https://cursos.alura.com.br/certificate/0f6771f9-b22a-4599-b185-ce35826ecbbb?lang" },
+  { name: "Go: criando uma API Rest", issuer: "Alura", year: "2026", url: "https://cursos.alura.com.br/certificate/be87c9a2-f489-424c-ac30-2ebb705fd129?lang" },
+  { name: "Linux: gerenciando diretórios, arquivos, permissões e processos", issuer: "Alura", year: "2026", url: "https://cursos.alura.com.br/certificate/97ed4456-87a6-4ce2-b1ba-587207375e81?lang" },
+  { name: "Lógica de programação: praticando com desafios", issuer: "Alura", year: "2026", url: "https://cursos.alura.com.br/certificate/fdf76c3c-bcf3-4ffe-88dd-abf70639c7a1?lang" },
+  { name: "Git e GitHub: compartilhando e colaborando em projetos", issuer: "Alura", year: "2026", url: "https://cursos.alura.com.br/certificate/0e59677d-01a3-44ec-a520-c38d7160fbd1?lang" },
+  { name: "Lógica de programação: explore funções e listas", issuer: "Alura", year: "2026", url: "https://cursos.alura.com.br/certificate/87b1d63e-9fe3-4b98-bce3-1357f9c9931b?lang" },
+  { name: "Lógica de programação: mergulhe em programação com JavaScript", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/776cc307-793e-499f-a4e2-802eb32b4eb8?lang" },
+  { name: "MongoDB: conhecendo um banco de dados NoSQL", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/f939bf7f-d7d5-4a48-81a6-b85e2561bfcf?lang" },
+  { name: "Começando em Programação: carreira e primeiros passos", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/3a36ec3c-ad16-49cf-9df9-b341fbaab59f?lang" },
+  { name: "React Completo", issuer: "Origamid", year: "2026", url: "https://www.origamid.com/certificate/660fd87d" },
+  { name: "JavaScript Completo ES6", issuer: "Origamid", year: "2026", url: "https://www.origamid.com/certificate/e69a60b3" },
+  { name: "UI Design Avançado", issuer: "Origamid", year: "2025", url: "https://www.origamid.com/certificate/d94f7a8c" },
+  { name: "HTML e CSS: responsividade com mobile-first", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/d5854b0c-c80b-4cd2-8bad-0fb1e1f7b6e8?lang" },
+  { name: "HTML e CSS: praticando HTML/CSS", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/19f4bf42-0e47-436b-b79b-8abbac81a50b?lang" },
+  { name: "HTML e CSS: Classes, posicionamento e Flexbox", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/713bc245-3cf4-4942-a58f-9c6e0a604baa?lang" },
+  { name: "HTML e CSS: cabeçalho, footer e variáveis CSS", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/403508c2-8e1e-4845-ad6a-d5abd72a9edd?lang" },
+  { name: "HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/113e460b-0c02-44e4-b033-f91a6fdaade5?lang" },
+  { name: "Começando em Programação: carreira e primeiros passos", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/3a36ec3c-ad16-49cf-9df9-b341fbaab59f?lang" },
+
+  { name: "Algoritmos com JavaScript II: aprofundando em algoritmos de ordenação e busca", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/00643fc2-ce0e-41b6-b28a-6b1e03f1ce68?lang" },
+  { name: "HTML e CSS: trabalhando com responsividade e publicação de projetos", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/f9971106-f177-4bd2-ba7e-57576de08bad?lang" },
+  { name: "JavaScript I: algoritmos de ordenação", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/490fac77-94b2-4bcb-ba52-c245314d1adf?lang" },
+  { name: "JavaScript: Arrays", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/96221858-df80-4c1c-b5eb-2c9102e86958?lang" },
+  { name: "JavaScript: objetos", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/9e95eeb4-37f3-4fa1-9566-d6dd7a2fc913?lang" },
+  { name: "JavaScript: programação orientada a objetos", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/02057dcf-ae56-46ad-be83-71bcaf411729?lang" },
+  { name: "JavaScript: tipos, variáveis e funções", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/525994bf-8600-40e8-895a-5ab5be4ff2fa?lang" },
+  { name: "Modelagem de banco de dados relacional: modelagem lógica e física", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/ee2de79f-7c39-48b4-b384-d2af4c05f4bc?lang" },
+  { name: "Go: Métodos, Generics e Interface", issuer: "Alura", year: "2025", url: "https://www.alura.com.br" },
+  { name: "Go: Concorrência e Otimização de API", issuer: "Alura", year: "2025", url: "https://www.alura.com.br" },
+  { name: "Node.js: Testes Unitários e de Integração", issuer: "Alura", year: "2025", url: "https://www.alura.com.br" },
+  { name: "MongoDB: Banco de Dados NoSQL", issuer: "Alura", year: "2025", url: "https://www.alura.com.br" },
+  { name: "CSS Grid Layout", issuer: "Origamid", year: "2025", url: "https://www.origamid.com" },
+  { name: "Modelagem de Banco Relacional", issuer: "Alura", year: "2025", url: "https://www.alura.com.br" },
+  { name: "JavaScript: POO, Arrays e Objetos", issuer: "Alura", year: "2025", url: "https://www.alura.com.br" },
+  { name: "Fundamentos em Cibersegurança", issuer: "Cisco Networking Academy", year: "2021", url: "https://www.netacad.com" },
 ];
 
 // ─── Shared utilities ─────────────────────────────────────────────────────────
@@ -467,6 +511,120 @@ function About() {
                     </div>
                   </motion.div>
                 ))}
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
+// ─── Featured Project ─────────────────────────────────────────────────────────
+
+function FeaturedProject() {
+  const { ref, inView } = useFadeUp();
+
+  return (
+    <section className="py-6 border-t border-border">
+      <div className="max-w-6xl mx-auto px-6">
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 28 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7 }}
+          className="overflow-hidden border border-border bg-card/40"
+        >
+          <div className="p-6 md:p-8 lg:p-10">
+            <div className="flex items-center justify-between gap-4 flex-wrap mb-8">
+              <SectionLabel text="Destaque" />
+              <span className="font-mono text-[10px] tracking-[0.18em] text-primary uppercase">
+                {FEATURED_PROJECT.year}
+              </span>
+            </div>
+
+            <div className="grid lg:grid-cols-[1.3fr_0.7fr] gap-8 lg:gap-10 items-start">
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="font-display font-bold uppercase text-2xl md:text-3xl lg:text-4xl leading-none">
+                    {FEATURED_PROJECT.title}
+                  </span>
+                  <a
+                    href={FEATURED_PROJECT.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.12em] text-muted-foreground hover:text-primary transition-colors uppercase"
+                  >
+                    {FEATURED_PROJECT.site} <ArrowUpRight size={11} />
+                  </a>
+                </div>
+
+                <p className="text-muted-foreground leading-relaxed text-base mb-6 max-w-2xl">
+                  {FEATURED_PROJECT.summary}
+                </p>
+
+                <p className="text-muted-foreground leading-relaxed text-sm mb-8 max-w-2xl">
+                  {FEATURED_PROJECT.description}
+                </p>
+
+                <div className="flex flex-wrap gap-2">
+                  {FEATURED_PROJECT.stack.map((item) => (
+                    <span
+                      key={item}
+                      className="font-mono text-[10px] tracking-[0.08em] uppercase border border-border px-2.5 py-1.5 text-muted-foreground"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="rounded-none border border-border bg-background p-4 md:p-5">
+                <div className="font-mono text-[10px] tracking-[0.18em] text-muted-foreground uppercase mb-4">
+                  Preview
+                </div>
+
+                <div className="border border-border bg-card p-3">
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="flex gap-1.5">
+                      <span className="h-2.5 w-2.5 rounded-full bg-primary/80" />
+                      <span className="h-2.5 w-2.5 rounded-full bg-muted-foreground/60" />
+                      <span className="h-2.5 w-2.5 rounded-full bg-muted-foreground/40" />
+                    </div>
+                    <span className="font-mono text-[9px] tracking-[0.12em] text-muted-foreground uppercase">
+                      web
+                    </span>
+                  </div>
+
+                  <div className="h-2.5 w-24 bg-primary/80 mb-3" />
+
+                  <div className="grid grid-cols-3 gap-2 mb-3">
+                    {FEATURED_PROJECT.preview.map((item) => (
+                      <div
+                        key={item}
+                        className="border border-border bg-background px-1 py-2 text-center"
+                      >
+                        <div className="font-mono text-[8px] tracking-[0.12em] text-muted-foreground uppercase">
+                          {item}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="space-y-2">
+                    <div className="h-2 bg-border" />
+                    <div className="h-2 w-5/6 bg-border" />
+                    <div className="h-2 w-4/6 bg-border" />
+                  </div>
+
+                  <div className="mt-4 border border-dashed border-primary/40 p-2.5">
+                    <div className="font-mono text-[8px] tracking-[0.14em] text-primary uppercase">
+                      Solicitação de álbum
+                    </div>
+                    <div className="mt-2 h-2 w-3/4 bg-primary/20" />
+                    <div className="mt-1.5 h-2 w-2/3 bg-primary/10" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -912,19 +1070,25 @@ function Certifications() {
 
           <div className="grid md:grid-cols-2 gap-px bg-border">
             {visible.map((cert, i) => (
-              <motion.div
+              <motion.a
                 key={i}
+                href={cert.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 initial={{ opacity: 0 }}
                 animate={inView ? { opacity: 1 } : {}}
                 transition={{ duration: 0.4, delay: 0.05 * i }}
-                className="bg-background p-5 flex items-center justify-between gap-4 hover:bg-card transition-colors"
+                className="group bg-background p-5 flex items-center justify-between gap-4 hover:bg-card transition-colors"
               >
                 <div>
-                  <p className="text-sm text-foreground">{cert.name}</p>
+                  <p className="text-sm text-foreground group-hover:text-primary transition-colors">{cert.name}</p>
                   <p className="font-mono text-xs text-muted-foreground mt-0.5">{cert.issuer}</p>
                 </div>
-                <span className="font-mono text-xs text-primary shrink-0">{cert.year}</span>
-              </motion.div>
+                <div className="flex items-center gap-2 shrink-0">
+                  <span className="font-mono text-xs text-primary">{cert.year}</span>
+                  <ArrowUpRight size={12} className="text-muted-foreground group-hover:text-primary transition-colors" />
+                </div>
+              </motion.a>
             ))}
           </div>
 
@@ -968,6 +1132,7 @@ export default function App() {
       <Navbar />
       <Hero />
       <About />
+      <FeaturedProject />
       <Projects />
       <Experience />
       <TechStack />
