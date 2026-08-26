@@ -10,7 +10,9 @@ import {
   ArrowUpRight,
   Star,
   Linkedin,
+  MessageCircle,
 } from "lucide-react";
+import previewVideo from "../assets/preview.mp4";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -36,22 +38,24 @@ const GITHUB_USERNAME = "Pimentazx";
 
 const PROJECTS = [
   {
+    id: "forest",
+    title: "Forest",
+    year: "2026",
+    description:
+      "Projeto com foco na aplicação prática do Tailwind CSS, explorando a construção de interfaces modernas, responsivas e reutilizáveis.",
+    stack: ["HTML5", "CSS3", "Tailwind CSS", "JavaScript"],
+    url: "https://github.com/Pimentazx/forest",
+    deployUrl: null,
+  },
+  {
     id: "restaurant-system",
     title: "Restaurant System",
-    year: "2025",
+    year: "2026",
     description:
       "API REST completa para gerenciamento de restaurantes, reservas e avaliações. Arquitetura de microsserviços com deploy na AWS.",
     stack: ["Node.js", "Express", "PostgreSQL", "Prisma", "MongoDB", "Docker", "AWS EC2"],
     url: "https://github.com/Pimentazx/restaurant-system",
-  },
-  {
-    id: "gnpfit",
-    title: "GNP FIT",
-    year: "2023",
-    description:
-      "Plataforma fitness full stack — front-end em HTML/CSS, back-end em Java Spring Boot com persistência em MySQL e MongoDB.",
-    stack: ["Java", "Spring Boot", "MySQL", "MongoDB", "HTML", "CSS"],
-    url: "https://github.com/Pimentazx/GNPFit",
+    deployUrl: null,
   },
   {
     id: "bikcraft",
@@ -61,6 +65,7 @@ const PROJECTS = [
       "Site de bicicletas elétricas personalizadas com foco em UX/UI Design, acessibilidade e experiência de produto imersiva.",
     stack: ["HTML", "CSS", "JavaScript", "UX/UI Design"],
     url: "https://github.com/Pimentazx/Bikcraft",
+    deployUrl: "https://pimentazx.github.io/Bikcraft/",
   },
   {
     id: "docker-compose-api",
@@ -70,6 +75,7 @@ const PROJECTS = [
       "Aplicação containerizada com Docker Compose, exposta à internet. Demonstra orquestração de serviços e deploy em ambiente real.",
     stack: ["Docker", "Express.js", "PostgreSQL"],
     url: "https://github.com/Pimentazx/docker-compose-api",
+    deployUrl: null,
   },
   {
     id: "wildbeast",
@@ -79,6 +85,7 @@ const PROJECTS = [
       "Layout responsivo construído com CSS Grid puro — sem frameworks. Implementação prática dos conceitos do curso Origamid.",
     stack: ["HTML", "CSS Grid"],
     url: "https://github.com/Pimentazx/wildbeast",
+    deployUrl: "https://pimentazx.github.io/wildbeast/",
   },
   {
     id: "notifica-o-app",
@@ -88,6 +95,7 @@ const PROJECTS = [
       "Aplicação web para gerenciamento de notificações: criar, listar e excluir. API REST com Node.js e Express.",
     stack: ["JavaScript", "Node.js", "Express.js"],
     url: "https://github.com/Pimentazx/notifica-o-app",
+    deployUrl: null,
   },
 ];
 
@@ -137,7 +145,7 @@ const EXPERIENCE = [
 
 const FEATURED_PROJECT = {
   title: "Mérito Formaturas",
-  year: "2025",
+  year: "2026",
   site: "meritoformaturas.com.br",
   summary:
     "Projeto entregue em produção para um cliente real, com foco em experiência do usuário, apresentação de serviços, galeria multimídia e conversão de leads por meio de um formulário personalizado de solicitação de álbum de formatura.",
@@ -146,9 +154,8 @@ const FEATURED_PROJECT = {
   stack: ["React", "TypeScript", "Vite", "Tailwind CSS", "NestJS", "Cloudinary", "SMTP", "APIs"],
   preview: [
     "Landing Page",
-    "Galeria",
-    "Formulário",
   ],
+  videoUrl: previewVideo,
   url: "http://meritoformaturas.com.br",
 };
 
@@ -181,9 +188,12 @@ const TECH_CATS: { id: string; label: string }[] = [
 ];
 
 const CERTS = [
-  { name: "Go: use concorrência para otimizar sua aplicação", issuer: "Alura", year: "2026", url: "https://cursos.alura.com.br/certificate/5670c2c6-a2c6-4c5c-a893-817c2f02f859?lang" },
+  { name: "React Completo", issuer: "Origamid", year: "2026", url: "https://www.origamid.com/certificate/660fd87d" },
+  { name: "JavaScript Completo ES6", issuer: "Origamid", year: "2026", url: "https://www.origamid.com/certificate/e69a60b3" },
+  { name: "UI Design Avançado", issuer: "Origamid", year: "2026", url: "https://www.origamid.com/certificate/d94f7a8c" },
   { name: "Go: crie Métodos, Generics e Interface", issuer: "Alura", year: "2026", url: "https://cursos.alura.com.br/certificate/5816a23f-a50a-4b01-808a-f2edc4d6fcb5?lang" },
-  { name: "Go: Concorrência e Otimização de API", issuer: "Alura", year: "2026", url: "https://cursos.alura.com.br/certificate/0f6771f9-b22a-4599-b185-ce35826ecbbb?lang" },
+  { name: "Go: use concorrência para otimizar sua aplicação", issuer: "Alura", year: "2026", url: "https://cursos.alura.com.br/certificate/5670c2c6-a2c6-4c5c-a893-817c2f02f859?lang" },
+  { name: "Go: gerenciando e otimizando sua API ", issuer: "Alura", year: "2026", url: "https://cursos.alura.com.br/certificate/0f6771f9-b22a-4599-b185-ce35826ecbbb?lang" },
   { name: "Go: criando uma API Rest", issuer: "Alura", year: "2026", url: "https://cursos.alura.com.br/certificate/be87c9a2-f489-424c-ac30-2ebb705fd129?lang" },
   { name: "Linux: gerenciando diretórios, arquivos, permissões e processos", issuer: "Alura", year: "2026", url: "https://cursos.alura.com.br/certificate/97ed4456-87a6-4ce2-b1ba-587207375e81?lang" },
   { name: "Lógica de programação: praticando com desafios", issuer: "Alura", year: "2026", url: "https://cursos.alura.com.br/certificate/fdf76c3c-bcf3-4ffe-88dd-abf70639c7a1?lang" },
@@ -192,32 +202,26 @@ const CERTS = [
   { name: "Lógica de programação: mergulhe em programação com JavaScript", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/776cc307-793e-499f-a4e2-802eb32b4eb8?lang" },
   { name: "MongoDB: conhecendo um banco de dados NoSQL", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/f939bf7f-d7d5-4a48-81a6-b85e2561bfcf?lang" },
   { name: "Começando em Programação: carreira e primeiros passos", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/3a36ec3c-ad16-49cf-9df9-b341fbaab59f?lang" },
-  { name: "React Completo", issuer: "Origamid", year: "2026", url: "https://www.origamid.com/certificate/660fd87d" },
-  { name: "JavaScript Completo ES6", issuer: "Origamid", year: "2026", url: "https://www.origamid.com/certificate/e69a60b3" },
-  { name: "UI Design Avançado", issuer: "Origamid", year: "2025", url: "https://www.origamid.com/certificate/d94f7a8c" },
-  { name: "HTML e CSS: responsividade com mobile-first", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/d5854b0c-c80b-4cd2-8bad-0fb1e1f7b6e8?lang" },
   { name: "HTML e CSS: praticando HTML/CSS", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/19f4bf42-0e47-436b-b79b-8abbac81a50b?lang" },
-  { name: "HTML e CSS: Classes, posicionamento e Flexbox", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/713bc245-3cf4-4942-a58f-9c6e0a604baa?lang" },
-  { name: "HTML e CSS: cabeçalho, footer e variáveis CSS", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/403508c2-8e1e-4845-ad6a-d5abd72a9edd?lang" },
-  { name: "HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/113e460b-0c02-44e4-b033-f91a6fdaade5?lang" },
-  { name: "Começando em Programação: carreira e primeiros passos", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/3a36ec3c-ad16-49cf-9df9-b341fbaab59f?lang" },
-
-  { name: "Algoritmos com JavaScript II: aprofundando em algoritmos de ordenação e busca", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/00643fc2-ce0e-41b6-b28a-6b1e03f1ce68?lang" },
+  { name: "HTML e CSS: responsividade com mobile-first", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/d5854b0c-c80b-4cd2-8bad-0fb1e1f7b6e8?lang" },
   { name: "HTML e CSS: trabalhando com responsividade e publicação de projetos", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/f9971106-f177-4bd2-ba7e-57576de08bad?lang" },
+  { name: "HTML e CSS: Classes, posicionamento e Flexbox", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/713bc245-3cf4-4942-a58f-9c6e0a604baa?lang" },
+  { name: "HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/113e460b-0c02-44e4-b033-f91a6fdaade5?lang" },
+  { name: "HTML e CSS: cabeçalho, footer e variáveis CSS", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/403508c2-8e1e-4845-ad6a-d5abd72a9edd?lang" },
+  { name: "Algoritmos com JavaScript II: aprofundando em algoritmos de ordenação e busca", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/00643fc2-ce0e-41b6-b28a-6b1e03f1ce68?lang" },
   { name: "JavaScript I: algoritmos de ordenação", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/490fac77-94b2-4bcb-ba52-c245314d1adf?lang" },
+  { name: "JavaScript: programação orientada a objetos", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/02057dcf-ae56-46ad-be83-71bcaf411729?lang" },
+  { name: "Node.js: criando sua primeira biblioteca", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/62ed47e8-5b4b-4562-a593-8fedb4fe4990?lang" },
   { name: "JavaScript: Arrays", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/96221858-df80-4c1c-b5eb-2c9102e86958?lang" },
   { name: "JavaScript: objetos", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/9e95eeb4-37f3-4fa1-9566-d6dd7a2fc913?lang" },
-  { name: "JavaScript: programação orientada a objetos", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/02057dcf-ae56-46ad-be83-71bcaf411729?lang" },
   { name: "JavaScript: tipos, variáveis e funções", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/525994bf-8600-40e8-895a-5ab5be4ff2fa?lang" },
+  { name: "UI Design para Iniciantes", issuer: "Origamid", year: "2025", url: "https://www.origamid.com/certificate/48fc7a49" },
+  { name: "CSS Grid Layout", issuer: "Origamid", year: "2025", url: "https://www.origamid.com/certificate/37979006" },
   { name: "Modelagem de banco de dados relacional: modelagem lógica e física", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/ee2de79f-7c39-48b4-b384-d2af4c05f4bc?lang" },
-  { name: "Go: Métodos, Generics e Interface", issuer: "Alura", year: "2025", url: "https://www.alura.com.br" },
-  { name: "Go: Concorrência e Otimização de API", issuer: "Alura", year: "2025", url: "https://www.alura.com.br" },
-  { name: "Node.js: Testes Unitários e de Integração", issuer: "Alura", year: "2025", url: "https://www.alura.com.br" },
-  { name: "MongoDB: Banco de Dados NoSQL", issuer: "Alura", year: "2025", url: "https://www.alura.com.br" },
-  { name: "CSS Grid Layout", issuer: "Origamid", year: "2025", url: "https://www.origamid.com" },
-  { name: "Modelagem de Banco Relacional", issuer: "Alura", year: "2025", url: "https://www.alura.com.br" },
-  { name: "JavaScript: POO, Arrays e Objetos", issuer: "Alura", year: "2025", url: "https://www.alura.com.br" },
-  { name: "Fundamentos em Cibersegurança", issuer: "Cisco Networking Academy", year: "2021", url: "https://www.netacad.com" },
+  { name: "MongoDB: conhecendo um banco de dados NoSQL", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/f939bf7f-d7d5-4a48-81a6-b85e2561bfcf?lang" },
+  { name: "Node.js: Testes Unitários e de Integração", issuer: "Alura", year: "2025", url: "https://cursos.alura.com.br/certificate/6c0c1314-4bc8-4636-ae8b-55a13234c975" },
+  { name: "CSS Flexbox", issuer: "Origamid", year: "2025", url: "https://www.origamid.com/certificate/f41b5053" },
+  { name: "HTML e CSS para Iniciantes", issuer: "Origamid", year: "2025", url: "https://www.origamid.com/certificate/3486591e" },
 ];
 
 // ─── Shared utilities ─────────────────────────────────────────────────────────
@@ -249,6 +253,7 @@ function Navbar() {
 
   const links = [
     { label: "Sobre", href: "#sobre" },
+    { label: "Destaque", href: "#destaque" },
     { label: "Projetos", href: "#projetos" },
     { label: "Experiência", href: "#experiencia" },
     { label: "Stack", href: "#stack" },
@@ -399,7 +404,7 @@ function Hero() {
         transition={{ delay: 1, duration: 0.6 }}
         className="flex items-center justify-between mt-16 pt-6 border-t border-border"
       >
-        <div className="flex gap-6">
+        <div className="flex flex-wrap gap-x-6 gap-y-3">
           <a
             href={`https://github.com/${GITHUB_USERNAME}`}
             target="_blank"
@@ -409,7 +414,7 @@ function Hero() {
             <Github size={13} /> GitHub
           </a>
           <a
-            href="mailto:gui.pimentel2004@gmail.com"
+            href="mailto:guilhermepimenteldev@gmail.com"
             className="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.12em] text-muted-foreground hover:text-primary transition-colors uppercase"
           >
             <Mail size={13} /> Email
@@ -421,6 +426,14 @@ function Hero() {
             className="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.12em] text-muted-foreground hover:text-primary transition-colors uppercase"
           >
             <Linkedin size={13} /> LinkedIn
+          </a>
+          <a
+            href="https://wa.me/5511951939957"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.12em] text-muted-foreground hover:text-primary transition-colors uppercase"
+          >
+            <MessageCircle size={13} /> WhatsApp
           </a>
         </div>
         <a
@@ -458,7 +471,7 @@ function About() {
                 Construindo o digital com precisão
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Desenvolvedor full stack de 22 anos, baseado em São Paulo. Formado
+                Desenvolvedor full stack de 22 anos, nascido em São Paulo. Formado
                 em Análise e Desenvolvimento de Sistemas pelo SENAI, com formação
                 técnica em Redes de Computadores e pós-graduação Full-Stack pela
                 FIAP. Atualmente cursando Engenharia de Software na São Judas Tadeu.
@@ -526,7 +539,7 @@ function FeaturedProject() {
   const { ref, inView } = useFadeUp();
 
   return (
-    <section className="py-6 border-t border-border">
+    <section id="destaque" className="py-6 border-t border-border">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           ref={ref}
@@ -543,7 +556,7 @@ function FeaturedProject() {
               </span>
             </div>
 
-            <div className="grid lg:grid-cols-[1.3fr_0.7fr] gap-8 lg:gap-10 items-start">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <span className="font-display font-bold uppercase text-2xl md:text-3xl lg:text-4xl leading-none">
@@ -579,50 +592,18 @@ function FeaturedProject() {
                 </div>
               </div>
 
-              <div className="rounded-none border border-border bg-background p-4 md:p-5">
-                <div className="font-mono text-[10px] tracking-[0.18em] text-muted-foreground uppercase mb-4">
-                  Preview
-                </div>
-
-                <div className="border border-border bg-card p-3">
-                  <div className="flex items-center justify-between mb-3">
-                    <div className="flex gap-1.5">
-                      <span className="h-2.5 w-2.5 rounded-full bg-primary/80" />
-                      <span className="h-2.5 w-2.5 rounded-full bg-muted-foreground/60" />
-                      <span className="h-2.5 w-2.5 rounded-full bg-muted-foreground/40" />
-                    </div>
-                    <span className="font-mono text-[9px] tracking-[0.12em] text-muted-foreground uppercase">
-                      web
-                    </span>
-                  </div>
-
-                  <div className="h-2.5 w-24 bg-primary/80 mb-3" />
-
-                  <div className="grid grid-cols-3 gap-2 mb-3">
-                    {FEATURED_PROJECT.preview.map((item) => (
-                      <div
-                        key={item}
-                        className="border border-border bg-background px-1 py-2 text-center"
-                      >
-                        <div className="font-mono text-[8px] tracking-[0.12em] text-muted-foreground uppercase">
-                          {item}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="space-y-2">
-                    <div className="h-2 bg-border" />
-                    <div className="h-2 w-5/6 bg-border" />
-                    <div className="h-2 w-4/6 bg-border" />
-                  </div>
-
-                  <div className="mt-4 border border-dashed border-primary/40 p-2.5">
-                    <div className="font-mono text-[8px] tracking-[0.14em] text-primary uppercase">
-                      Solicitação de álbum
-                    </div>
-                    <div className="mt-2 h-2 w-3/4 bg-primary/20" />
-                    <div className="mt-1.5 h-2 w-2/3 bg-primary/10" />
+              <div className="rounded-none border border-border bg-background p-3 md:p-4">
+                <div className="border border-border bg-card overflow-hidden">
+                  <div className="relative h-[260px] md:h-[320px] lg:h-[360px] overflow-hidden">
+                    <video
+                      className="h-full w-full object-cover"
+                      src={FEATURED_PROJECT.videoUrl}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      preload="auto"
+                    />
                   </div>
                 </div>
               </div>
@@ -667,11 +648,8 @@ function Projects() {
           {/* Grid with gap-px trick for flush borders */}
           <div className="grid md:grid-cols-2 gap-px bg-border">
             {PROJECTS.map((proj, i) => (
-              <motion.a
+              <motion.article
                 key={proj.id}
-                href={proj.url}
-                target="_blank"
-                rel="noopener noreferrer"
                 initial={{ opacity: 0 }}
                 animate={inView ? { opacity: 1 } : {}}
                 transition={{ duration: 0.5, delay: 0.08 * i }}
@@ -704,7 +682,36 @@ function Projects() {
                     </span>
                   ))}
                 </div>
-              </motion.a>
+
+                <div className="flex flex-wrap gap-3 mt-8">
+                  <a
+                    href={proj.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-mono text-[10px] tracking-[0.12em] uppercase px-4 py-2.5 hover:bg-primary/85 transition-colors"
+                  >
+                    Repositório <Github size={12} />
+                  </a>
+                  {proj.deployUrl ? (
+                    <a
+                      href={proj.deployUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 border border-border text-foreground font-mono text-[10px] tracking-[0.12em] uppercase px-4 py-2.5 hover:border-primary/50 hover:text-primary transition-colors"
+                    >
+                      Deploy <ExternalLink size={12} />
+                    </a>
+                  ) : (
+                    <button
+                      type="button"
+                      disabled
+                      className="inline-flex items-center gap-2 border border-border/60 text-muted-foreground/60 font-mono text-[10px] tracking-[0.12em] uppercase px-4 py-2.5 cursor-not-allowed"
+                    >
+                      Deploy <ExternalLink size={12} />
+                    </button>
+                  )}
+                </div>
+              </motion.article>
             ))}
           </div>
         </motion.div>
@@ -878,14 +885,6 @@ function GitHubSection() {
                     Repos
                   </div>
                 </div>
-                <div>
-                  <div className="font-display font-bold text-3xl text-primary leading-none">
-                    {user.followers}
-                  </div>
-                  <div className="font-mono text-[10px] tracking-[0.15em] text-muted-foreground uppercase mt-1">
-                    Seguidores
-                  </div>
-                </div>
               </div>
             )}
           </div>
@@ -1003,9 +1002,14 @@ function Contact() {
             <div className="space-y-3">
               {[
                 {
+                  label: "WhatsApp",
+                  value: "+55 (11) 95193-9957",
+                  href: "https://wa.me/5511951939957",
+                },
+                {
                   label: "Email",
-                  value: "gui.pimentel2004@gmail.com",
-                  href: "mailto:gui.pimentel2004@gmail.com",
+                  value: "guilhermepimenteldev@gmail.com",
+                  href: "mailto:guilhermepimenteldev@gmail.com",
                 },
                 {
                   label: "LinkedIn",
@@ -1051,8 +1055,8 @@ function Contact() {
 
 function Certifications() {
   const { ref, inView } = useFadeUp();
-  const [expanded, setExpanded] = useState(false);
-  const visible = expanded ? CERTS : CERTS.slice(0, 6);
+  const [visibleCount, setVisibleCount] = useState(6);
+  const visible = CERTS.slice(0, visibleCount);
 
   return (
     <section id="certs" className="py-32 border-t border-border">
@@ -1094,11 +1098,11 @@ function Certifications() {
 
           {CERTS.length > 6 && (
             <button
-              onClick={() => setExpanded((v) => !v)}
+              onClick={() => setVisibleCount((count) => count >= CERTS.length ? 6 : Math.min(count + 6, CERTS.length))}
               className="mt-6 font-mono text-[11px] tracking-[0.15em] text-muted-foreground hover:text-primary transition-colors uppercase flex items-center gap-2"
             >
-              {expanded ? "Ver menos" : `Ver todas (${CERTS.length})`}
-              <ArrowUpRight size={11} className={`transition-transform ${expanded ? "rotate-90" : ""}`} />
+              {visibleCount >= CERTS.length ? "Ver menos" : "Ver mais"}
+              <ArrowUpRight size={11} className={`transition-transform ${visibleCount >= CERTS.length ? "rotate-90" : ""}`} />
             </button>
           )}
         </motion.div>
