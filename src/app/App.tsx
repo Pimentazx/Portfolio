@@ -45,7 +45,7 @@ const PROJECTS = [
       "Projeto com foco na aplicação prática do Tailwind CSS, explorando a construção de interfaces modernas, responsivas e reutilizáveis.",
     stack: ["HTML5", "CSS3", "Tailwind CSS", "JavaScript"],
     url: "https://github.com/Pimentazx/forest",
-    deployUrl: null,
+    deployUrl: "https://forest-liard-eta.vercel.app/",
   },
   {
     id: "restaurant-system",
@@ -372,7 +372,7 @@ function Hero() {
         >
           Desenvolvedor full stack, 22 anos, São Paulo. Formado em ADS pelo
           SENAI, pós-graduado pela FIAP e cursando Engenharia de Software. Stack:
-          React, Spring Boot, Node.js, Go e Docker.
+          React, TypeScript, Node.js, NestJS, PostgreSQL.
         </motion.p>
 
         {/* CTAs */}
@@ -699,7 +699,7 @@ function Projects() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 border border-border text-foreground font-mono text-[10px] tracking-[0.12em] uppercase px-4 py-2.5 hover:border-primary/50 hover:text-primary transition-colors"
                     >
-                      Deploy <ExternalLink size={12} />
+                      Projeto Online <ExternalLink size={12} />
                     </a>
                   ) : (
                     <button
@@ -707,7 +707,7 @@ function Projects() {
                       disabled
                       className="inline-flex items-center gap-2 border border-border/60 text-muted-foreground/60 font-mono text-[10px] tracking-[0.12em] uppercase px-4 py-2.5 cursor-not-allowed"
                     >
-                      Deploy <ExternalLink size={12} />
+                      Projeto Online <ExternalLink size={12} />
                     </button>
                   )}
                 </div>
@@ -1121,7 +1121,7 @@ function Footer() {
           © 2026 Guilherme de Souza Pimentel
         </span>
         <span className="font-mono text-xs text-muted-foreground">
-          React · TypeScript · Vite · Tailwind
+          React · TypeScript · Node.js · NestJS · PostgreSQL
         </span>
       </div>
     </footer>
