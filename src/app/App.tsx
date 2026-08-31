@@ -548,18 +548,18 @@ function FeaturedProject() {
           transition={{ duration: 0.7 }}
           className="overflow-hidden border border-border bg-card/40"
         >
-          <div className="p-6 md:p-8 lg:p-10">
-            <div className="flex items-center justify-between gap-4 flex-wrap mb-8">
+          <div className="p-4 sm:p-6 md:p-8 lg:p-10">
+            <div className="flex items-center justify-between gap-4 flex-wrap mb-6 sm:mb-8">
               <SectionLabel text="Destaque" />
               <span className="font-mono text-[10px] tracking-[0.18em] text-primary uppercase">
                 {FEATURED_PROJECT.year}
               </span>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
+            <div className="grid lg:grid-cols-2 gap-3 sm:gap-4 md:gap-8 lg:gap-10 items-start lg:items-center">
               <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="font-display font-bold uppercase text-2xl md:text-3xl lg:text-4xl leading-none">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 mb-4">
+                  <span className="font-display font-bold uppercase text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-none">
                     {FEATURED_PROJECT.title}
                   </span>
                   <a
@@ -572,11 +572,11 @@ function FeaturedProject() {
                   </a>
                 </div>
 
-                <p className="text-muted-foreground leading-relaxed text-base mb-6 max-w-2xl">
+                <p className="text-muted-foreground leading-relaxed text-sm sm:text-base mb-4 sm:mb-6 max-w-2xl">
                   {FEATURED_PROJECT.summary}
                 </p>
 
-                <p className="text-muted-foreground leading-relaxed text-sm mb-8 max-w-2xl">
+                <p className="text-muted-foreground leading-relaxed text-xs sm:text-sm mb-6 sm:mb-8 max-w-2xl">
                   {FEATURED_PROJECT.description}
                 </p>
 
@@ -592,9 +592,9 @@ function FeaturedProject() {
                 </div>
               </div>
 
-              <div className="rounded-none border border-border bg-background p-3 md:p-4">
+              <div className="rounded-none border border-border bg-background p-2 sm:p-3 md:p-4">
                 <div className="border border-border bg-card overflow-hidden">
-                  <div className="relative h-[260px] md:h-[320px] lg:h-[360px] overflow-hidden">
+                  <div className="relative h-[200px] sm:h-[260px] md:h-[320px] lg:h-[360px] overflow-hidden">
                     <video
                       className="h-full w-full object-cover"
                       src={FEATURED_PROJECT.videoUrl}
@@ -801,7 +801,7 @@ function TechStack() {
             Stack
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12">
             {TECH_CATS.map((cat, ci) => (
               <motion.div
                 key={cat.id}
@@ -1115,8 +1115,8 @@ function Certifications() {
 
 function Footer() {
   return (
-    <footer className="border-t border-border py-8">
-      <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+    <footer className="border-t border-border py-6 sm:py-8">
+      <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-4 text-center sm:text-left">
         <span className="font-mono text-xs text-muted-foreground">
           © 2026 Guilherme de Souza Pimentel
         </span>
